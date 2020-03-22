@@ -47,7 +47,6 @@ def populate_questions(db, rel_path):
                                 AnswerCount=elem.attrib['AnswerCount'],
                                 CommentCount=elem.attrib['CommentCount'])
         db.session.add(new_question)
-        #db.session.commit()
 
 
 def populate_answers(db, rel_path):
@@ -72,4 +71,3 @@ def populate_answers(db, rel_path):
                             LastActivityDate=last_activity_date,
                             CommentCount=elem.attrib['CommentCount'])
         db.session.add(new_answer)
-        #db.session.commit()
