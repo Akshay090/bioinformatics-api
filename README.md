@@ -21,6 +21,7 @@ Setup Database
     $ flask db init
     $ flask db migrate
     $ flask db upgrade  
+    $ flask db-populate
 
 Run Flask application:
 
